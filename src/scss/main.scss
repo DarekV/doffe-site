@@ -42,12 +42,48 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #565656;
+  letter-spacing: 0;
+  text-align: center;
+}
+
 header {
   margin-bottom: 49px;
 }
 
-nav {
+.nav {
+  margin-top: 17px;
   position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url(../img/img_header.jpeg);
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  header {
+    background-size: 200%;
+  }
+}
+
+@media (min-width: 576px) {
+  header {
+    background-size: 130%;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    background-size: 100%;
+  }
 }
 
 .img-header {
@@ -60,18 +96,87 @@ nav {
 
 .description-subtitle {
   margin-bottom: 15px;
+  font-family: Brother-1816-Medium-Italic;
+  font-size: 20px;
+  color: #748272;
+  letter-spacing: 0;
 }
 
 .description-title {
   margin-bottom: 43px;
+  font-family: Brother-1816-Bold;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.background-beige {
+  background-color: #eddac6;
+  padding-top: 135px;
 }
 
 .section-beige {
   margin-bottom: 150px;
 }
 
+.background-section {
+  background-color: rgba($color: #fff9f3, $alpha: 0.9);
+}
+
+@media (min-width: 768px) {
+  .background-section {
+    background-color: transparent;
+  }
+}
+
+.section-beige img,
+.section-green img {
+  width: 100vw;
+  margin-left: -12px;
+}
+
+@media (min-width: 576px) {
+  .section-beige img,
+  .section-green img {
+    margin-left: calc((100vw - 516px) / 2 * -1);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-beige img,
+  .section-green img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+h2 {
+  font-family: Brother-1816-Bold;
+  font-size: 30px;
+  margin: 30px 0 0 50px;
+  text-align: left;
+}
+
+p {
+  text-align: left;
+  font-family: MontserratRoman-Light;
+  margin: 20px 40px 40px 60px;
+}
+
 .banner {
   margin-bottom: 140px;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.white {
+  color: #f2ede5;
+}
+
+.background-green {
+  background-color: #7c897a;
 }
 
 .section-green {
@@ -80,4 +185,9 @@ nav {
 
 .section-map {
   margin-bottom: 100px;
+}
+
+.logo {
+  width: 170px;
+  height: 100%;
 }
