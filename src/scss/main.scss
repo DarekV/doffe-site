@@ -48,7 +48,6 @@ body {
   color: #565656;
   letter-spacing: 0;
   text-align: center;
-  overflow: hidden;
 }
 
 header {
@@ -338,21 +337,21 @@ footer p {
   }
 }
 
-.background-nav {
-  background-color: rgba($color: #565656, $alpha: 0.7);
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+// .background-nav {
+//   background-color: rgba($color: #565656, $alpha: 0.7);
+//   width: 300px;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+// }
 
-.wrapper-nav {
-  display: flex;
-  flex-direction: column;
-  margin: 100px 100px 0 0;
-}
+// .wrapper-nav {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 100px 100px 0 0;
+// }
 
-.wrapper-nav a {
-  margin-bottom: 30px;
-}
+// .wrapper-nav a {
+//   margin-bottom: 30px;
+// }
