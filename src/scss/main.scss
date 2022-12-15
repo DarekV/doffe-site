@@ -48,6 +48,7 @@ body {
   color: #565656;
   letter-spacing: 0;
   text-align: center;
+  overflow: hidden;
 }
 
 header {
@@ -300,4 +301,58 @@ footer p {
   color: #f2ede5;
   letter-spacing: 20.1px;
   text-align: left;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-menu a {
+  font-family: Brother-1816-ExtraBold-Italic;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: right;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+}
+
+.tab {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.burger-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.burger {
+  @media (max-width: 992px) {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+.background-nav {
+  background-color: rgba($color: #565656, $alpha: 0.7);
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wrapper-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px 0 0;
+}
+
+.wrapper-nav a {
+  margin-bottom: 30px;
 }
