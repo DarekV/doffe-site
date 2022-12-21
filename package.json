@@ -32,6 +32,8 @@
     "sass": "^1.42.1"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "scrollmagic": "^2.0.8",
+    "swiper": "^6.8.4"
   }
 }

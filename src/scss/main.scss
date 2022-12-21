@@ -18,6 +18,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,6 +65,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 header {
@@ -304,7 +306,7 @@ footer p {
 
 .burger-menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .burger-menu a {
@@ -322,10 +324,22 @@ footer p {
   }
 }
 
-.burger-wrapper {
+.burger-button {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
+
+  &.is-activ .burger {
+    &:nth-child(1) {
+      transform: translate(-1px, 1px) rotate(45deg);
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      transform: translate(-1px, 13px) rotate(-45deg);
+    }
+  }
 }
 
 .burger {
@@ -334,24 +348,38 @@ footer p {
     border: 1px solid white;
     border-radius: 25px;
     margin-bottom: 10px;
+    transition: 0.5s;
+    transform-origin: left;
   }
 }
 
-// .background-nav {
-//   background-color: rgba($color: #565656, $alpha: 0.7);
-//   width: 300px;
-//   height: 100%;
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-// }
+.background-nav {
+  background-color: rgba($color: #565656, $alpha: 0.7);
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.5s;
 
-// .wrapper-nav {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 100px 100px 0 0;
-// }
+  &.is-open {
+    transform: translateX(0);
+  }
+}
 
-// .wrapper-nav a {
-//   margin-bottom: 30px;
-// }
+.wrapper-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px 0 0;
+}
+
+.wrapper-nav a {
+  margin-bottom: 30px;
+}
+
+.menu-leave {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}

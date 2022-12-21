@@ -21,20 +21,24 @@
       <div class="container-fluid nav">
         <div class="row">
           <div class="col-2">
-            <img class="logo" src="img/logo.svg" alt="logo" />
+            <a href="#">
+              <h1>
+                <img class="logo" src="img/logo.svg" alt="logo" />
+              </h1>
+            </a>
           </div>
           <div class="col-2 offset-2 burger-menu">
-            <a class="tab" href="">Nos Menus</a>
+            <a class="tab" href="#menu">Nos Menus</a>
           </div>
           <div class="col-2 burger-menu">
-            <a class="tab" href="">Le Bar</a>
+            <a class="tab" href="#bar">Le Bar</a>
           </div>
           <div class="col-2 burger-menu">
-            <a class="tab" href="">Nos Chiens</a>
+            <a class="tab" href="#chien">Nos Chiens</a>
           </div>
           <div class="col-2 burger-menu">
-            <a class="tab" href="">Le Shop</a>
-            <div class="burger-wrapper">
+            <a class="tab" href="#shop">Le Shop</a>
+            <div class="burger-button">
               <div class="burger"></div>
               <div class="burger"></div>
               <div class="burger"></div>
@@ -42,12 +46,14 @@
           </div>
         </div>
       </div>
-      <div class="background-nav">
-        <div class="wrapper-nav burger-menu">
-          <a href="">Nos Menu</a>
-          <a href="">Le Bar</a>
-          <a href="">Nos Chiens</a>
-          <a href="">Le Shop</a>
+      <div class="menu-leave"></div>
+        <div class="background-nav">
+          <div class="wrapper-nav burger-menu">
+            <a href="#menu">Nos Menu</a>
+            <a href="#bar">Le Bar</a>
+            <a href="#chien">Nos Chiens</a>
+            <a href="#shop">Le Shop</a>
+          </div>
         </div>
       </div>
     </header>
@@ -81,7 +87,7 @@
           <div class="container section-beige">
             <div class="row">
               <div class="col-12 col-lg-4">
-                <img src="img/img_menu.jpeg" alt="image carte" />
+                <img src="img/img_menu.jpeg" alt="image carte" id="menu" />
               </div>
               <div class="col-12 col-lg-7">
                 <div class="wrapper">
@@ -105,6 +111,7 @@
             <div class="row">
               <div class="col-12 col-lg-4 order-lg-1">
                 <img
+                  id="bar"
                   class="img-right"
                   src="img/img_bar.jpg"
                   alt="image du bar"
@@ -136,7 +143,7 @@
           <div class="container section-beige">
             <div class="row">
               <div class="col-12 col-lg-4">
-                <img src="img/img_chien.jpg" alt="image de chien" />
+                <img src="img/img_chien.jpg" alt="image de chien" id="chien"/>
               </div>
               <div class="col-12 col-lg-7">
                 <div class="wrapper">
@@ -159,7 +166,7 @@
         </div>
         <div class="banner"></div>
       </div>
-      <div class="background-green">
+      <div class="background-green" id="shop">
         <div class="container section-green">
           <div class="row">
             <div class="col-12 col-lg-7 offset-lg-1">
@@ -235,5 +242,6 @@
       </div>
     </footer>
     <script src="js/main.js" type="module"></script>
+    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
   </body>
 </html>
