@@ -17,7 +17,7 @@
   "parcel-namer-rewrite": {
     "developmentDisable": true,
     "rules": {
-      "(.*)\\.(css)": "css/$1.$2",
+      "(.*)\\.(scss)": "scss/$1.$2",
       "(.*)\\.(js)": "js/$1.$2",
       "(.*)\\.(woff|woff2?)": "fonts/$1.$2",
       "(.*)\\.(svg|png|gif|jpg|webp)": "img/$1.$2"
@@ -34,7 +34,6 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "gsap": "^3.11.3",
-    "scrollmagic": "^2.0.8",
-    "swiper": "^6.8.4"
+    "scrollmagic": "^2.0.8"
   }
 }
