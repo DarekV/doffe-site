@@ -176,6 +176,9 @@ header {
 .beige-background-color {
   background-color: rgba($color: #fff9f3, $alpha: 0.9);
   padding: 1px;
+}
+
+.wrapper {
   z-index: 1;
 }
 
@@ -192,7 +195,7 @@ p {
   margin: 20px 40px 40px 60px;
 }
 
-.p_margin {
+.p-margin {
   margin-bottom: 19px;
 }
 
@@ -312,7 +315,7 @@ footer p {
 .burger-menu a {
   font-family: Brother-1816-ExtraBold-Italic;
   font-size: 25px;
-  color: #ffffff;
+  color: #b1c4b4;
   text-align: right;
   margin: 10px 0 0 0;
   text-decoration: none;
@@ -345,7 +348,7 @@ footer p {
 .burger {
   @media (max-width: 992px) {
     width: 35px;
-    border: 1px solid white;
+    border: 1.5px solid #b1c4b4;
     border-radius: 25px;
     margin-bottom: 10px;
     transition: 0.5s;

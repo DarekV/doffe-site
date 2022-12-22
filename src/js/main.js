@@ -27,8 +27,8 @@ ScrollTrigger.matchMedia({
         trigger: ".trigger-1",
         scrub: 1,
       },
-      y: 20,
-      duration: 0.2,
+      y: 40,
+      duration: 1,
     });
 
     gsap.to(".text-2", {
@@ -36,8 +36,8 @@ ScrollTrigger.matchMedia({
         trigger: ".trigger-2",
         scrub: 1,
       },
-      y: 20,
-      duration: 0.2,
+      y: 35,
+      duration: 1,
     });
 
     gsap.to(".text-3", {
@@ -45,8 +45,8 @@ ScrollTrigger.matchMedia({
         trigger: ".trigger-3",
         scrub: 1,
       },
-      y: 20,
-      duration: 0.2,
+      y: 40,
+      duration: 1,
     });
 
     gsap.to(".text-4", {
@@ -54,8 +54,8 @@ ScrollTrigger.matchMedia({
         trigger: ".trigger-4",
         scrub: 1,
       },
-      y: 20,
-      duration: 0.2,
+      y: 40,
+      duration: 1,
     });
   },
 });
