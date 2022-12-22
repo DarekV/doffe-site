@@ -388,8 +388,11 @@ footer p {
   width: 100%;
   height: 100%;
   position: fixed;
-  display: none;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.5s;
   &.is-on {
-    display: flex;
+    transform: translateX(0);
   }
 }
