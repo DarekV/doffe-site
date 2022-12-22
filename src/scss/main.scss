@@ -319,6 +319,9 @@ footer p {
   text-align: right;
   margin: 10px 0 0 0;
   text-decoration: none;
+  &:hover {
+    color: #eddac6;
+  }
 }
 
 .tab {
